@@ -16,6 +16,7 @@ const connect = function() {
     console.log("Successfully connected to game server");
     conn.write("Name: SJC");
 
+    conn.write("Say: LOL");
 
     // setInterval(() => {
     //   conn.write("Move: up");
