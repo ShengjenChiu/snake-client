@@ -22,6 +22,14 @@ const handleUserInput = function (key) {
     connection.write("Move: right");
   }
 
+  if(key === 'p') {
+    connection.write("Say: hello world");
+  }
+
+  if(key === 'l') {
+    connection.write("Say: it's very nice!");
+  }
+
   // \u0003 maps to ctrl+c input
   if (key === '\u0003') {
     process.exit();
