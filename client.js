@@ -34,53 +34,53 @@ const connect = function() {
     // }, 100);
 
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 0);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 0);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 0);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 0);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 50);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 100);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 100);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 150);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 150);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 200);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 200);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 250);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 250);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 300);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 300);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 350);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 350);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 400);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 400);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 450);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 450);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 500);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 500);
 
 
   });
@@ -89,7 +89,7 @@ const connect = function() {
 };
 
 console.log("Connecting ...");
-connect();
+// connect();
 
 module.exports = {
   connect,
