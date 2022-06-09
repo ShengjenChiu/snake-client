@@ -1,17 +1,35 @@
+// Stores the active TCP connection object.
+let connection;
+
 //should check for the ctrl + c input and terminate the game.
 const handleUserInput = function (key) {
   // on any input from stdin (standard input), output a "." to stdout
   //process.stdout.write('.');
-  
+
+  if(key === 'w') {
+    connection.write("Move: up");
+  }
+
+  if(key === 'a') {
+    connection.write("Move: left");
+  }
+
+  if(key === 's') {
+    connection.write("Move: down");
+  }
+
+  if(key === 'd') {
+    connection.write("Move: right");
+  }
+
   // \u0003 maps to ctrl+c input
   if (key === '\u0003') {
     process.exit();
   }
-
 }
 
 //setup interface to handle user input from stdin
-const setupInput = function () {
+const setupInput = function (conn) {
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
@@ -19,11 +37,13 @@ const setupInput = function () {
   
   // Event Handling for User Input
   stdin.on("data", handleUserInput);
-  
+
+  connection = conn;
+
   return stdin;
 };
 
-setupInput();
+// setupInput();
 
 module.exports = {
   setupInput,
